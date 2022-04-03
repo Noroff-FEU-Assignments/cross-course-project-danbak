@@ -1,0 +1,140 @@
+body {
+    font-family: "Bahnschrift", Times, serif;
+    color: #FCFCFC;
+    background-color: #DDDDDD;
+}
+
+h1 {
+    font-family: "Bahnschrift", Times, serif;
+    color: #FCFCFC;
+    font-size: 60px;
+    font-weight: bold;
+}
+h2 {
+    font-family: "Bahnschrift", Times, serif;
+    color: #FCFCFC;
+    font-size: 35px;
+}
+h3 {
+    font-family: "Bahnschrift", Times, serif;
+    color: #232323;
+}
+.active {
+    background-color: #984118;
+    color: #FFF;
+}
+
+footer::before, footer::after{
+    content: '/';
+    color: #984118;
+    font-size: 30px;
+    font-weight: bold;
+}
+#LandingpageVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 95%;
+  }
+  /* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 230px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #3C3C3C; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /* The navigation menu links */
+  .sidenav a {
+    margin-top: 20px;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FCFCFC;
+    display: block;
+    box-align: center;
+  }
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #984118;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 381px; /* Same as the width of the sidebar */
+    padding-top: 200px;
+    padding-left: 100px;
+    padding-right: 250px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .button {
+    background-color: #984018; /* Red from Wireframe */
+    border: none;
+    color: #FCFCFC;
+    width: 210px;
+    margin: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Open Sans', 'Banshrift';
+    font-size: 35px;
+    font-weight: bold;
+    z-index: 1;
+  }
+  .choices { 
+    margin-left: 381px; /* Same as the width of the sidebar */
+    padding-top: 200px;
+    padding-left: 180px;
+    text-decoration: none;
+    display: block;
+  }
+  .choices a {
+    color: #E1E8F2;
+    text-decoration: none;
+}
+  .choices a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+  /* Shopping Cart */
+  .shoppingcart {
+    margin-right: 150px;
+    padding-top: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+  }
+  .topnav input[type=text] {
+    padding: 9px;
+    margin-top: 8px;
+    font-size: 19px;
+    border: none;
+  }
+  .searchbar {
+    margin-right: 230px;
+    padding-top: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    float: none;
+    text-align: left;
+  }
+
