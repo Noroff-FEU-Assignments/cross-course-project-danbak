@@ -1,90 +1,125 @@
 body {
-    font-family: "Bahnschrift", Times, serif;
+    font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
     color: #FCFCFC;
     background-color: #DDDDDD;
+    display: flex;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+    color: #FCFCFC;
+    font-weight: bold;
 }
 
 h1 {
-    font-family: "Bahnschrift", Times, serif;
-    color: #FCFCFC;
-    font-size: 60px;
-    font-weight: bold;
-}
-h2 {
-    font-family: "Bahnschrift", Times, serif;
-    color: #FCFCFC;
-    font-size: 35px;
-}
-h3 {
-    font-family: "Bahnschrift", Times, serif;
-    color: #232323;
-}
-.active {
-    background-color: #984118;
-    color: #FFF;
+  font-size: 45px;
 }
 
-footer::before, footer::after{
-    content: '/';
-    color: #984118;
-    font-size: 30px;
-    font-weight: bold;
+h2 {
+  font-size: 35px;
 }
-#LandingpageVideo {
+
+.img {
+  width: 100%
+}
+
+.active {
+    background-color: #984118;
+    color: #FFFFFF;
+}
+
+#landingpageVideo {
+    display: flex;
     position: fixed;
     right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    min-width: 50%;
+    min-height: 50%;
     z-index: -1;
-    opacity: 95%;
+    opacity: 97%;
   }
-  /* The sidebar menu */
+
 .sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 230px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%; 
+    width: 220px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
     left: 0;
     background-color: #3C3C3C; 
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
   }
-  /* The navigation menu links */
+  .sidenav-extra {
+   margin-top: auto;
+   margin-bottom: 70px;
+  }
+
   .sidenav a {
-    margin-top: 20px;
-    padding: 6px 8px 6px 16px;
+    display: flex;
+    margin-top: 30px;
+    padding-left: 40px;
     text-decoration: none;
     text-align: left;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     color: #FCFCFC;
     display: block;
     box-align: center;
   }
-  /* When you mouse over the navigation links, change their color */
+
   .sidenav a:hover {
     color: #984118;
   }
-  
-  /* Style page content */
+
   .main {
-    margin-left: 381px; /* Same as the width of the sidebar */
+    display: flex;
+    flex-direction: column;
+    margin-left: 381px; 
     padding-top: 200px;
     padding-left: 100px;
     padding-right: 250px;
   }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+  .main-head {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
   }
+  .social-media {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+  }
+  .jackets {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .jacket {
+    flex: 1 0 600px;
+  }
+  .jacket-image{
+    height: 250px;
+    width: 150px;
+    object-fit: cover;
+  }
+
+
+  @media screen and (min-width: 900px) {
+.jackets {
+  flex-direction: row;
+}
+
+  }
+
+/* save for later
   .button {
-    background-color: #984018; /* Red from Wireframe */
+    width: 100%;
+    background-color: #984018; 
     border: none;
     color: #FCFCFC;
     width: 210px;
@@ -98,11 +133,11 @@ footer::before, footer::after{
     z-index: 1;
   }
   .choices { 
-    margin-left: 381px; /* Same as the width of the sidebar */
+    display: flex;
+    margin-left: 381px; 
     padding-top: 200px;
     padding-left: 180px;
     text-decoration: none;
-    display: block;
   }
   .choices a {
     color: #E1E8F2;
@@ -112,29 +147,35 @@ footer::before, footer::after{
     color: #ffffff;
     text-decoration: none;
 }
-  /* Shopping Cart */
+*/
+
   .shoppingcart {
+    display: flex;
+    flex: auto;
+    margin-top: auto;
     margin-right: 150px;
     padding-top: 80px;
     position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
+    width: 55px;
   }
   .topnav input[type=text] {
+    display: flex;
     padding: 9px;
     margin-top: 8px;
     font-size: 19px;
     border: none;
   }
   .searchbar {
+    display: flex;
     margin-right: 230px;
     padding-top: 80px;
     position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
-    float: none;
     text-align: left;
   }
 
